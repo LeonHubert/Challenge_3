@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Challenge 3</title>
+		<script src="js/main.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body onload="getBoredAPIdata()">
+		<div class="container">
+		<div class="column">
+			<h1>Welcome to earth, consider the following if you are bored</h1>
+			<label id="activityLabel"> </label>
+			<br>
+			<label id="typeLabel">Activity type:</label>
+			<br>
+			<label id="peopleRequired">People required: 1</label>
+			<br>
+			<label id="costLabel">Cost indication: low</label>
+			<br>
+			Participants: <input id="participantsButton" type="number" name="peopleRequired" value="1"><br>
+			<button type="button" onclick="updateActivity()">Find activity</button>
+		</div>
+		<div class="column">
+			<div id="cookingDiv">
+				<h1>A cooking activity was suggested, you could also try this recipe!</h1>
+				<label id="recipeNameLabel">Recipe name:</label>
+				<br>
+				<label id="ingredientsLabel">Ingredients: </label>
+				<br>
+				<label id="originLabel">Recipe origin:</label>
+				<br>
+				<label id="categoryLabel">Recipe category:</label>
+				<br>
+				<label id="instructionLabel">Instructions: </label>
+				<br>
+				<img alt="Recipe image" id="recipeImage">
+				</br>
+				<button type="button" onclick="getCookingAPIdata()">Find new recipe</button>
+			</div>
+		</div>
+	</div>
+	</body>
+</html>
